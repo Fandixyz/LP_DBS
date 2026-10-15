@@ -18,7 +18,7 @@ jobs:
 
       - name: Extract Android project
         run: |
-          unzip -o LP_DB_GitHub_build_APK.zip -d project
+          unzip -o LP_DB_Android_responsif_siap_upload.zip -d project
           ls -la project/LP_DB_Android
 
       - name: Setup Java
