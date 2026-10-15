@@ -18,7 +18,7 @@ jobs:
 
       - name: Extract Android project
         run: |
-          unzip -o LP_DB_Android_menu_ikon_mudah_siap_upload.zip -d project
+          unzip -o LP_DB_Android_menu_ikon_mudah_siap_upload-1.zip -d project
           ls -la project/LP_DB_Android
 
       - name: Setup Java
