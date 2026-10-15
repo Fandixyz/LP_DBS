@@ -1,0 +1,25 @@
+name: Build LP_DB APK
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/build-apk.yml'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Extract project ZIP
+        run: |
+          unzip -o LP_DB_GitHub_build_APK.zip -d project
+          find project -maxdepth 4 -type f | head -100
+
+      - name: Show project files
+        run: |
+          echo "File proyek berhasil diekstrak."
+          find project -type f | head -100
